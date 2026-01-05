@@ -160,6 +160,10 @@ nmap <silent> gp <Plug>(coc-diagnostic-prev)
 nmap <silent> gn <Plug>(coc-diagnostic-next)
 nmap <silent> gl :<C-u>CocList diagnostics<CR>
 
+nnoremap <silent> <leader>ac <Plug>(coc-codeaction-cursor)
+nnoremap <silent> <leader>rn <Plug>(coc-rename)
+nnoremap <silent> <leader>qf <Plug>(coc-fix-current)
+
 nmap <leader> rn <Plug>(coc-rename)
 nmap <leader> ac <Plug>(coc-codeaction-cursor)
 

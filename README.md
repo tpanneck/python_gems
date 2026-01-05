@@ -156,6 +156,12 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gp <Plug>(coc-diagnostic-prev)
+nmap <silent> gn <Plug>(coc-diagnostic-next)
+nmap <silent> gl :<C-u>CocList diagnostics<CR>
+
+nmap <leader> rn <Plug>(coc-rename)
+nmap <leader> ac <Plug>(coc-codeaction-cursor)
 
 " ALE + CoC Koexistenz
 let g:ale_disable_lsp = 1

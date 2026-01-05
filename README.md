@@ -139,6 +139,15 @@ set undofile            " Undo-Historie über Sessions hinweg speichern
 set list
 set listchars=tab:>-,trail:.,extends:>,precedes:<
 
+" --- Springe zur letzten Cursor-Position beim Öffnen einer Datei ---
+augroup JumpToLastPosition
+  autocmd!
+  autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
+augroup END
+
 " ============================================================================
 " 4. COC & LSP EINSTELLUNGEN (Für C und Python)
 " ============================================================================

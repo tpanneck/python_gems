@@ -79,6 +79,12 @@ sudo apt autoremove -y
 
 ## vimrc 
 
+Install the plugin-manager (if needed)
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
 Don't forget to call ```:PlugInstall```
 
 Language packs CoC  ```:CocInstall coc-pyright coc-clangd coc-json```

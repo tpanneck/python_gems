@@ -72,6 +72,17 @@ chmod 600 ~/.vim/autoload/plug.vim
 sudo apt install -y gimp mupdf mupdf-tools
 ```
 
+### bessere R-search
+
+
+```bash
+sudo apt install fzf
+
+# Füge dies am Ende deiner ~/.bashrc ein:
+[ -f /usr/share/doc/fzf/examples/key-bindings.bash ] && . /usr/share/doc/fzf/examples/key-bindings.bash
+[ -f /usr/share/doc/fzf/examples/completion.bash ] && . /usr/share/doc/fzf/examples/completion.bash
+```
+
 ### 6. Cleanup
 ```bash
 sudo apt autoremove -y

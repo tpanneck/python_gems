@@ -72,6 +72,12 @@ chmod 600 ~/.vim/autoload/plug.vim
 sudo apt install -y gimp mupdf mupdf-tools
 ```
 
+### git hist
+
+```bash
+git config --global alias.hist "log --color --graph --pretty=format:'%C(bold white)%h%Creset -%C(bold green)%ad%Creset %s%C(bold yellow)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=short"
+```
+
 ### bessere R-search
 
 
